@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Student Registration Form</u></h2>
+    <form action="/submit_form" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" required><br><br>
+
+	<label for="dob">Date Of Birth</label><br>
+        <input type="date"><br><br>
+
+        <label for="email">Email-id:</label><br>
+        <input type="email" id="email" name="email" placeholder="@gmail.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required><br><br>
+
+	<label for="address">Address:</label><br>
+        <textarea id="address" name="address" placeholder="Your address" rows="5" cols="40" required></textarea><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        
+        <label for="course"> Select Course:</label><br>
+        <select id="course" name="Course " required>
+	    <option value="Select Course">Select Course</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="B.tech">B.Tech</option>
+            <option value="M.tech">M.Tech</option>
+ 	    <option value="B.Com">B.Com</option>
+	    <option value="M.Com">M.Com</option>
+        </select><br><br>
+	<label for="Subject">Select Languages for the Course:</label><br>
+	<label><input type="checkbox" name="subject" value="English" checked="checked"/>English</label>
+	<label><input type="radio" name="subject" value="Kannada"/>Kannada</label>
+	<label><input type="radio" name="subject" value="Hindi"/>Hindi</label><br></br>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
